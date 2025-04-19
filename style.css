@@ -16,4 +16,12 @@
   --btn-clr: hsl(71, 73%, 54%);
   --main-bg-clr: hsl(204, 43%, 93%);
   --first-para-clr: hsl(218, 22%, 67%);
+  --clrd-box-fnt-clr: white;
+}
+
+/* set root properties */
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
 }
