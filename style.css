@@ -13,17 +13,56 @@
 
 :root {
   --cyan: hsl(179, 62%, 43%);
+  --drk-box-bg: hsl(179, 62%, 44%);
+  --light-box-bg: hsl(180, 55.2%, 57%);
   --btn-clr: hsl(71, 73%, 54%);
   --main-bg-clr: hsl(204, 43%, 93%);
   --first-para-clr: hsl(218, 22%, 67%);
   --clrd-box-fnt-clr: white;
 }
 
-/* set root properties */
+/* sets universal css variables */
 
 body {
   font-size: 16px;
   font-family: "Karla", sans-serif;
   width: 100%;
   min-height: 100vh;
+  background-color: var(--main-bg-clr);
 }
+/* element formatting */
+
+#grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(autofill, auto);
+  grid-template-areas: "white-box" "white-box" "drk-box" "light-box";
+}
+
+#white-box {
+  grid-area: "white-box";
+  grid-row: 1/3;
+  grid-column: 1/3;
+  background-color: white;
+}
+#drk-box {
+  grid-area: "drk-box";
+  grid-row: 3/5;
+  background-color: var(--drk-box-bg);
+}
+#light-box {
+  grid-area: "light-box";
+  grid-row: 3/5;
+  background-color: var(--light-box-bg);
+}
+/* ID formatting */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* class formatting */
