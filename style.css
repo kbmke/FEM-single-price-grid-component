@@ -10,3 +10,10 @@
 }
 
 /* page reset */
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --btn-clr: hsl(71, 73%, 54%);
+  --main-bg-clr: hsl(204, 43%, 93%);
+  --first-para-clr: hsl(218, 22%, 67%);
+}
